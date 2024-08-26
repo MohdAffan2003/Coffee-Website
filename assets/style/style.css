@@ -1,0 +1,922 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    color: white;
+    scroll-behavior: smooth;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav a {
+    height: 100%;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav a:hover {
+    border-bottom: 2px solid #29a19c;
+}
+.navlogo {
+   position: absolute;
+   right: 12rem;
+}
+.your{
+    position: absolute;
+   right: 4rem;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: #29a19c;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu-button {
+    display: none;
+}
+.curve{
+    height: 39px;
+    width: 21px;
+    position: absolute;
+    background-color: #29a19c;
+    bottom: -21%;
+    left: 0px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 25%;
+}
+
+.topContainerImg,.pageTwoHiddenImg,.pageTwoImgHiddenContent,.pageThreeHiddenImg,.pageThreeHiddenContent,.pageThreeWave,.pageFourHiddenImg,.pageFourHiddenContent,.branchContHiddenImg{
+    display: none;
+}
+button{
+    cursor: pointer;
+    transition: 0.5s;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #222831;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.navBar{
+    padding: 3% 5% 1% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 1% 0;
+    cursor: pointer;
+}
+
+a:hover{
+    border-bottom: 2px solid #29a19c;
+}
+
+.navLogo img{
+    width: 34px;
+}
+
+.navLogoDescription h2{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+.hamBurger{
+    display: none;
+    margin-top: 2%;
+}
+
+.hamLine{
+    display: block;
+    border-top: 2px solid white;
+    width: 8vw;
+    padding-top: 7px;
+}
+
+.pageOne{
+    padding: 4% 0 17% 5%;
+    color: white;
+    position: relative;
+    background-image: url(../images/imageOne.png), url(../images/pageOneCoffee.png), url(../images/pageOneBurger.png), url(../images/pageOneMug.png);
+    background-repeat: no-repeat;
+    background-position: right 0rem top 2.1rem, left 44rem top 4rem, left 33rem top 15rem, left 24rem top 24rem;
+    background-size: 48rem 38.6rem, 3rem 4rem, 3rem 3rem, 4.5rem 4.5rem;
+}
+
+.pageOneLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+}
+
+.pageOne h1{
+    font-family: "Grand Hotel", cursive;
+    font-size: 131px;
+    font-weight: 100;
+    word-spacing: 9px;
+}
+
+.pageOne h2{
+    word-wrap: 3px;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+.pageOnePara{
+    width: 34%;
+    word-break: break-all; 
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.orderNowButton button{
+    background-color: #29a19c;
+    color: white;
+    border: none;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0.8% 3%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pageOneWave{
+    position: absolute;
+    left: 0;
+    bottom: -1%;
+}
+
+.pageOneBurger{
+    position: absolute;
+    top: 36rem;
+    left: 13rem;
+}
+
+.pageTwo{
+    background-color: #29a19c;
+    padding: 0 9% 1% 9%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/pageOneBurger.png), url(../images/pageOneCoffee.png), url(../images/pageOneMug.png), url(../images/pageOneWaveBurger.png);
+    background-repeat: no-repeat;
+    background-position: top 2rem left 38rem, top -1rem right 6rem, left 34rem bottom 12rem, left 13rem bottom 3rem;
+    background-size: 3rem 3rem, 4rem 5rem, 7rem 7rem;
+}
+
+
+.pageTwoLeft h1{
+    font-family: "Grand Hotel", cursive;
+    font-size: 118px;
+    font-weight: 100;
+    line-height: 0.9;
+}
+
+.pageTwoHeading{
+    padding-top: 25%;
+}
+
+.pageTwoRight{
+    width: 53%;
+}
+
+.pageTwoButton{
+    padding: 14vh 0 0 0;
+}
+
+.pageTwoButton button{
+    background-color: #222831;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 4% 11%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pageTwoImg{
+    width: 83%;
+    margin-left: auto;
+}
+
+.pageTwoImgContent{
+    width: 93%;
+    margin-left: auto;
+    text-align: end;
+    text-align: right;
+    padding-top: 6%;
+    word-break: break-all;
+    font-size: 19px;
+}
+
+.pageTwoImgContent p{
+    line-height: 1.4;
+    word-spacing: 7px;
+    font-weight: 400;
+}
+
+.pageThree{
+    width: 100%;
+    position: relative;
+    padding: 6% 9% 1% 9%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-image: url(../images/imageFour.png),url(../images/pageThreeBgCup.png),url(../images/pageThreeBgBurgerRight.png),url(../images/pageThreeBgBurgerRight.png),url(../images/pageThreeBgMug.png);
+    background-repeat: no-repeat;
+    background-position: top -8.8rem left 0, top 10rem left 2rem, top 9rem left 48rem, top 26rem left 80rem, top 35rem left 52rem
+}
+
+.pageThreeLeft h1{
+    font-family: "Grand Hotel", cursive;
+    font-size: 118px;
+    font-weight: 100;
+    line-height: 0.9;
+    text-align: right;
+}
+
+.pageThreeHeading{
+    padding-top: 52%;
+}
+
+
+.pageThreeRight{
+    width: 53%;
+}
+
+.pageThreeButton{
+    padding: 14vh 0 0 0;
+    display: flex;
+    justify-content: end;
+}
+
+.pageThreeButton button{
+    background-color: #29a19c;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 4% 11%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pageThreeImg{
+    width: 83%;
+}
+
+.pageThreeImgContent{
+    width: 93%;
+    padding-top: 6%;
+    word-break: break-all;
+    font-size: 19px;
+}
+
+.pageThreeImgContent p{
+    line-height: 1.4;
+    word-spacing: 7px;
+    font-weight: 400;
+}
+
+.pageFour{
+    padding: 4% 9% 5% 9%;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/pageFourMug.png), url(../images/pageOneWaveBurger.png), url(../images/pageOneWaveBurger.png), url(../images/voucherRIghtMug.png);
+    background-repeat: no-repeat;
+    background-position: right 2rem top 8rem, top 4rem left 18rem, top 19rem left 38rem, top 39rem left 15rem;
+}
+
+
+.pageFourLeft h1{
+    font-family: "Grand Hotel", cursive;
+    font-size: 118px;
+    font-weight: 100;
+    line-height: 0.9;
+}
+
+.pageFourHeading{
+    padding-top: 52%;
+}
+
+.pageFourRight{
+    width: 53%;
+}
+
+.pageFourButton{
+    padding: 14vh 0 0 0;
+}
+
+.pageFourButton button{
+    background-color: #29a19c;
+    color: white;
+    border: none;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 4% 11%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pageFourImg{
+    width: 83%;
+    margin-left: auto;
+}
+
+.pageFourImgContent{
+    width: 93%;
+    margin-left: auto;
+    text-align: end;
+    text-align: right;
+    padding-top: 6%;
+    word-break: break-all;
+    font-size: 19px;
+}
+
+.pageFourImgContent p{
+    line-height: 1.4;
+    word-spacing: 7px;
+    font-weight: 400;
+}
+.customerReview{
+    padding-top: 3%;
+    position: relative;
+    background-image: url(../images/customerReviewBurger.png),url(../images/pageFourMug.png),url(../images/voucherRIghtMug.png);
+    background-repeat: no-repeat;
+    background-position: top 19rem left 38rem, top 34rem right 6rem, top 31rem left 3rem;
+}
+
+.customerReview h1{
+    font-size: 90px;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 3%;
+    font-family: "Grand Hotel", cursive;
+}
+
+.customerReviewContent{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 3% 9% 16% 9%;
+}
+
+.customerOne,.customerTwo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.customerOne h2,.customerTwo h2{
+    color: white;
+    font-family: "Grand Hotel", cursive;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+}
+
+.customerOne p,.customerTwo p{
+    width: 80%;
+    text-align: center;
+    line-height: 1.1;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.customerCurveBottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.restroTimingContainer{
+    background-color: #29a19c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+    width: 100%;
+    padding-bottom: 3%;
+    background-image: url(../images/pageOneWaveBurger.png),url(../images/pageOneMug.png),url(../images/pageThreeBgCup.png),url(../images/pageThreeBgBurgerRight.png);
+    background-repeat: no-repeat;
+    background-position: top 0rem left 7rem, top 4rem right 6rem, top 17rem left 16rem, top 20rem right 8rem;
+}
+
+.restroTimings{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.restroTimings p{
+    font-size: 32px;
+}
+
+.restroTimings h2{
+    font-size: 32px;
+}
+
+.restroTimingContainer h1{
+    font-family: "Grand Hotel", cursive;
+    font-size: 90px;
+    font-weight: 100;
+}
+
+.BranchContainer{
+    position: relative;
+    width: 100%;
+    padding: 11% 4% 18% 4%;
+    text-align: center;
+    background-image: url(../images/imageSIx.png),url(../images/pageOneWaveBurger.png),url(../images/pageThreeBgBurgerRight.png),url(../images/pageThreeBgCup.png),url(../images/pageThreeBgMug.png);
+    background-repeat: no-repeat;
+    background-position: left 0rem top -8rem,top 0rem left 0rem, top 10rem left 21rem ,bottom 9rem right 26rem,top 48rem left 26rem;
+}
+
+.BranchContainer h1{
+    font-family: "Grand Hotel", cursive;
+    font-size: 90px;
+    font-weight: 100;
+}
+
+.branchCards{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.branchButton{
+    width: 100%;
+    padding-top: 6vh;
+    position: relative;
+}
+
+.branchButton button{
+    color: white;
+    background-color: #29a19c;
+    border: none;
+    padding: 2% 8%;
+    font-size: 34px;
+    font-weight: bold;
+    border-radius: 11px;
+    width: 67%;
+    position: relative;
+}
+
+.branchDesc{
+    padding-top: 6vh;
+    width: 93%;
+    align-self: flex-start;
+}
+
+.branchDesc p{
+    font-size: 15px;
+    word-break: break-all;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.branchBottomWave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer{
+    padding: 1% 5% 7% 5%;
+    background-color: #29a19c;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft{
+    display: flex;
+    gap: 0.5vw;
+    align-items: flex-start;
+}
+
+.footerRight{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogoDescription{
+    font-size: 20px;
+}
+
+.footerRightHeading{
+    font-size: 22px;
+}
+
+.footerLeftPositon{
+    display: flex;
+    align-items: center;
+}
+
+.footerRightOne,.footerRightTwo{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.footerRightAnchor p{
+    padding-top: 5%;
+}
+
+.footerRightAnchor p a{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.footerBottomIconsAndText{
+    padding-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBottomIconsLeft{
+    display: flex;
+    gap: 4.4vw;
+}
+
+.footerBottomIconsRight{
+    display: flex;
+    gap: 2.7vw;
+    align-items: center;
+}
+
+
+
+
+@media (max-width:900px) {
+
+    .hideonMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+  .pageOneBurger,.pageTwoRight,.pageThreeRight,.pageFourRight{
+        display: none;
+    }
+
+    .hamLine,.hamBurger,.pageTwoHiddenImg,.pageTwoImgHiddenContent,.pageThreeHiddenImg,.pageThreeHiddenContent,.pageThreeWave,.pageFourHiddenImg,.pageFourHiddenContent,.branchContHiddenImg{
+        display: block;
+        word-break: break-all;
+    }
+
+    .topContainerImg,.pageTwoHiddenImg,.pageFourHiddenImg{
+        display: block;
+        width: 60%;
+        padding-bottom: 3%;
+    }
+
+    .orderNowButton,.pageTwoButton,.pageThreeButton,.pageFourButton{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .orderNowButton button,.pageTwoButton button,.pageThreeButton button,.pageFourButton button{
+        font-size: 1em;
+        padding: 2% 7%;
+    }
+
+    .pageOne,.pageTwo,.pageThree,.pageFour,.BranchContainer,.BranchContainer,.footer{
+        width: 100%;
+        background-image: none;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .pageTwoButton,.pageThreeButton,.pageFourButton{
+        padding-top: 2%;
+    }
+   
+    .navBar{
+        padding-top: 4%;
+    }
+
+    .navLeftAnchor{
+        display: none;
+    }
+
+    .navLogoDescription h2{
+        font-size: 1em;
+    }
+
+    .navLogo img{
+        width: 25px;
+    }
+
+    .pageOneLeft{
+        width: 100%;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageOnePara{
+        text-align: justify;
+        word-break: break-all;
+        width: 100%;
+        font-size: 1em;
+        padding-bottom: 6%;
+        padding-top: 4%;
+    }
+
+    .pageOneLeft h1{
+        font-size: 5em;
+        padding-bottom: 6%;
+    }
+
+    .pageOneLeft h2{
+        padding-bottom: 7%;
+        font-size: 1.4em;
+    }
+
+    .pageTwo{
+        flex-direction: column;
+        background-image: none;
+        padding-bottom: 5%;
+    }
+
+    .pageTwoHeading{
+        padding-top: 4%;
+        padding-bottom: 7%;
+    }
+
+    .pageTwoHeading h1,.pageThreeHeading h1,.pageFourHeading h1{
+        display: inline;
+        font-size: 4.5em;
+    }
+
+    .pageTwoLeft,.pageThreeLeft,.pageFourLeft{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageTwoImgHiddenContent{
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+
+    .pageThree{
+        background-image: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageThreeWave{
+        position: absolute;
+        top: -1rem;
+        width: 100%;
+        left: 0rem;
+    }
+
+    .pageThreeHiddenImg{
+        width: 60%;
+    }
+    
+    .pageThreeHeading{
+        padding-top: 18%;
+        padding-bottom: 10%;
+    }
+
+    .pageThreeHiddenContent{
+        padding-top: 7%;
+        padding-bottom: 4%;
+    }
+
+    .pageFour{
+        background-image: none;
+    }
+
+    .pageFourHeading{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .pageFourHiddenContent{
+        padding-top: 6%;
+        padding-bottom: 4%;
+    }
+
+    .customerReview{
+        background-image: none;
+        padding-top: 8%;
+        padding-bottom: 9%;
+    }
+
+    .customerReviewContent{
+        flex-direction: column;
+        gap: 8vh;
+        padding-top: 7%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .customerReview h1{
+        font-size: 291%;
+    }
+
+    .customerOne,.customerTwo{
+        gap: 2vh;
+    }
+
+    .customerImgCont{
+        width: 70%;
+    }
+
+    .customerOne p,.customerTwo p{
+        width: 100%;
+        word-break: break-all;
+        text-align: justify;
+    }
+
+    .customerCurveBottom{
+        bottom: -0.9%;
+    }
+
+    .restroTimingContainer{
+        background-image: none;
+        gap: 8vh;
+        padding-top: 2%;
+        padding-bottom: 8%;
+    }
+
+    .restroTimingContainer h1{
+        font-size: 5em;
+    }
+
+    .restroTimings p,.restroTimings h2{
+        font-size: 28px;
+    }
+
+    .BranchContainer{
+        background-image: none;
+    }
+
+    .branchContHiddenImg{
+        display: block;
+        position: absolute;
+        top: -2rem;
+        left: 0;
+    }
+
+    .BranchContainer h1{
+        padding-top: 6%;
+        font-size: 50px;
+        padding-bottom: 5%;
+    }
+
+    .branchCards{
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .cards{
+        width: 100%;
+    }
+
+    .cards img{
+        width: 100%;
+    }
+
+    .branchButton{
+        padding-top: 8%;
+    }
+
+    .branchButton button{
+        width: 60%;
+        padding-left: 6%;
+        padding-right: 6%;
+        font-size: 22px;
+    }
+
+    .branchDesc{
+        padding-top: 6%;
+        word-break: break-all;
+        text-align: justify;
+    }
+
+    .branchBottomWave{
+        bottom: -1rem;
+    }
+
+    .footer{
+        padding-top: 10%;
+    }
+
+    .footerContent{
+        flex-direction: column;
+    }
+
+    .footerBottomIconsAndText{
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerRight{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footerLeftPositon{
+        align-self: center;
+    }
+
+    .footerLeft{
+        justify-content: center;
+    }
+
+    .footerLeftPositon{
+        padding-bottom: 7%;
+    }
+
+    .footerRightOne,.footerRightTwo{
+        gap: 1vh;
+    }
+
+    .footerRightHeading h2{
+        text-align: center;
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    .footerRightAnchor{
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .footer {
+        height: 70rem;
+    }
+    .footerBottomIconsLeft {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footerBottomIconsRight {
+        padding-top: 20px;
+        
+    }
+}
+

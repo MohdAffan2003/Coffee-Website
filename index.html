@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            <ul>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="hideonMobile"><a href="#home">Home</a></li>
+                <li class="hideonMobile"><a href="#about">About</a></li>
+                <li class="hideonMobile"><a href="#menu">Menu</a></li>
+                <li class="hideonMobile"><a href="#blog">Blog</a></li>
+                <li class="hideonMobile"><a href="#shop">Shop</a></li>
+                <li class="hideonMobile"><a href="#contact">Contact</a></li>
+                <img class="navlogo" src="assets/images/navLogo.png" alt="icon" height="40">
+                <h1 class="your">Your Logo</h1>
+                
+            </ul>
+            </nav>
+        <div class="pageOne" id="home">
+            <div class="pageOneLeft">
+                <h1>Coffee Time</h1>
+                <h2>YOUR HEADLINE</h2>
+                <div class="topContainerImg">
+                    <img src="assets/images/imageOne.png" alt="white coffee" width="100%">
+                </div>
+
+                <div class="pageOnePara">
+                    Lorem ipsum dolor sit amet  adipisicing elit. Tempora  pariatur ljk kjdfk quibusdam accusamus officiis delectus incidunt.
+                </div>
+
+                <div class="orderNowButton">
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="pageOneWave">
+                <img src="assets/images/imageTwo.png" alt="Wave Image" width="100%">
+            </div>
+            <img src="assets/images/pageOneWaveBurger.png" alt="BurgerImage" class="pageOneBurger">
+        </div>
+
+        <div class="pageTwo" id="menu">
+            <div class="pageTwoLeft">
+                <div class="pageTwoHeading">
+                    <h1>Black </h1>
+                    <h1>Coffees</h1>
+                </div>
+
+                <div class="pageTwoHiddenImg">
+                    <img src="assets/images/imageThree.png" alt="Black Coffee" width="100%">
+                </div>
+
+                <div class="pageTwoImgHiddenContent">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli. Laudantium rerum fugit similique deserunt. Provident eum nisi modi, facilis mollitia consequuntur molestiae. Illo at , porro est!</p>
+                </div>
+
+                <div class="pageTwoButton">
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="pageTwoRight">
+                <div class="pageTwoImg">
+                    <img src="assets/images/imageThree.png" alt="jar image" width="100%">
+                </div>
+
+                <div class="pageTwoImgContent">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing eli. Laudantium rerum fugit similique deserunt. Provident eum nisi modi, facilis mollitia consequuntur molestiae. Illo at , porro est!</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="pageThree" >
+            <div class="pageThreeWave">
+                <img src="assets/images/imageFour.png" alt="Down Wave" width="100%">
+            </div>
+            <div class="pageThreeLeft">
+                <div class="pageThreeHeading">
+                    <h1>Hot </h1>
+                    <h1>Coffees</h1>
+                </div>
+
+                <div class="pageThreeHiddenImg">
+                    <img src="assets/images/hotCoffee.png" alt="Hot Coffee" width="100%">
+                </div>
+
+                <div class="pageThreeHiddenContent">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing el. Laudantium rerum fugit similique deserun. Provident eum nisi modi, facilis mollitia consequuntur molestiae. Illo at , porro est!</p>
+                </div>
+
+                <div class="pageThreeButton">
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="pageThreeRight">
+                <div class="pageThreeImg">
+                    <img src="assets/images/hotCoffee.png" alt="Hot Coffee" width="100%">
+                </div>
+
+                <div class="pageThreeImgContent">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing el. Laudantium rerum fugit similique deserun. Provident eum nisi modi, facilis mollitia consequuntur molestiae. Illo at , porro est!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pageFour">
+            <div class="pageFourLeft">
+                <div class="pageFourHeading">
+                    <h1>White </h1>
+                    <h1>Coffees</h1>
+                </div>
+
+                <div class="pageFourHiddenImg">
+                    <img src="assets/images/whiteCoffee.png" alt="White Coffe " width="100%">
+                </div>
+
+                <div class="pageFourHiddenContent">
+                    <p>Lorem, ipsum dolor sit amet consectetur eum nisi modi, facilis nisi modi, facilis mollitia adipisicing eli. Laudantium rerum fugit similique deserunt. Provident eum nisi modi, facilis mollitia consequuntur molestiae. Illo at , porro est!</p>
+                </div>
+
+                <div class="pageFourButton">
+                    <button>Order Now</button>
+                </div>
+            </div>
+            <div class="pageFourRight">
+                <div class="pageFourImg">
+                    <img src="assets/images/whiteCoffee.png" alt="whiteCoffee" width="100%">
+                </div>
+
+                <div class="pageFourImgContent">
+                    <p>Lorem, ipsum dolor sit amet consectetur eum nisi modi, facilis mollitia eum nisi modi, facilis mollitia adipisicing eli. Laudantium rerum fugit similique deserunt. Provident eum nisi modi, facilis mollitia consequuntur molestiae. Illo at , porro est!</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="customerReview" id="blog">
+            <h1>Customer Reviews</h1>
+            <div class="customerReviewContent">
+                <div class="customerOne">
+                    <div class="customerImgCont">
+                        <img src="assets/images/customerOne.png" alt="Customer One Review" width="100%">
+                    </div>
+                    <h2>John Peter</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur . Autem modi dicta  alias ex et sapiente, quisquam distinctio consectetur culpa inventore incidunt, fugit, aliquid nemo impedit suscipit facere.</p>
+                </div>
+
+                <div class="customerTwo">
+                    <div class="customerImgCont">
+                        <img src="assets/images/customerTwo.png" alt="Customer Two Review" width="100%">
+                    </div>
+                    <h2>Ella Thomson</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur . Autem modi dicta  alias ex et sapiente, quisquam distinctio consectetur culpa inventore incidunt, fugit, aliquid nemo impedit suscipit facere.</p>
+                </div>
+            </div>
+            <img src="assets/images/imageFive.png" alt="customer Review Curve" class="customerCurveBottom">
+        </div>
+
+        <div class="restroTimingContainer" id="about">
+            <h1>We are Open</h1>
+            <div class="restroTimings">
+                <h2>Monday-Friday</h2>
+                <p>10:00 am - 10:00 pm</p>
+            </div>
+            <div class="restroTimings">
+                <h2>Saturday and Sunday</h2>
+                <p>10:00 am - 10:10 pm</p>
+            </div>
+        </div>
+
+        <div class="BranchContainer" id="shop">
+            <div class="branchContHiddenImg">
+                <img src="assets/images/imageSIx.png" alt="Bottom wave image" width="100%">
+            </div>
+            <h1>Our Branches</h1>
+
+            <div class="branchCards">
+                <div class="cards">
+                    <img src="assets/images/cardOne.jpg" alt="Branch Card">
+                    <div class="branchButton">
+                        <button>New York
+                            <div class="curve"></div>
+                        </button>
+                    </div>
+                    <div class="branchDesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum fugit vel ratione qui velit in obcaecati illo. Vel, itaque! earum fugit vel ratione qui velit</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="assets/images/cardTwo.png" alt="Branch Card">
+                    <div class="branchButton">
+                        <button>Jakarta
+                            <div class="curve"></div>
+                        </button>
+                    </div>
+                    <div class="branchDesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum fugit vel ratione qui velit in obcaecati illo. Vel, itaque! earum fugit vel ratione qui velit</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="assets/images/cardThree.png" alt="Branch Card">
+                    <div class="branchButton">
+                        <button>Paris
+                            <div class="curve"></div>
+                        </button>
+                    </div>
+                    <div class="branchDesc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem earum fugit vel ratione qui velit in obcaecati illo. Vel, itaque! earum fugit vel ratione qui velit</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="assets/images/imageSeven.png" alt="branch Cards Bottom Wave" class="branchBottomWave" width="100%">
+        </div>
+
+
+        <div class="footer" id="contact">
+
+            <div class="footerContent">
+                <div class="footerLeft">
+                    <div class="footerLeftPositon">
+                        <div class="footerLogo">
+                            <img src="assets/images/navLogo.png" alt="Burger Logo" width="50px">
+                        </div>
+                        <div class="footerLogoDescription">
+                            <h2>YOUR LOGO</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerRight">
+                    <div class="footerRightOne">
+                        <div class="footerRightHeading">
+                            <h2>Information</h2>
+                        </div>
+                        <div class="footerRightAnchor">
+                            <p><a href="">About us</a></p>
+                            <p><a href="">Branches</a></p>
+                            <p><a href="">Menu</a></p>
+                            <p><a href="">Contact</a></p>
+                            <p><a href="">Map</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="footerRightTwo">
+                        <div class="footerRightHeading">
+                            <h2>Contact Us.</h2>
+                        </div>
+    
+                        <div class="footerRightAnchor">
+                            <p><a href="">Support</a></p>
+                            <p><a href="">your_id@gmail.com</a></p>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="footerBottomIconsAndText">
+                <div class="footerBottomIconsLeft">
+                    <a href="#home" class="footerLeftAnchor">Home</a>
+                    <a href="#about" class="navfooterAnchor">About</a>
+                    <a href="#menu" class="navfooterAnchor">Menu</a>
+                    <a href="#blog" class="navfooterAnchor">Blog</a>
+                    <a href="#shop" class="navfooterAnchor">Shop</a>
+                    <a href="#contact" class="navfooterAnchor">Contact</a>
+                </div>
+                <div class="footerBottomIconsRight">
+                    <img src="assets/images/facebook (1).png" alt="">
+                    <img src="assets/images/insta.png" alt="">
+                    <img src="assets/images/twitter.png" alt="">
+                    <img src="assets/images/youTube.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+<script>
+    function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+      }
+</script>
+</html>
